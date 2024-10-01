@@ -1,0 +1,74 @@
+/* index.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.header {
+  border-bottom: 2px solid #e0e0e0; /* Adjust border thickness and color as needed */
+  margin-bottom: 20px; /* Adjust margin for spacing */
+}
+
+.header h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.nav-links a {
+  color: #333333;
+  font-weight: 500;
+}
+
+.shadow-bottom {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tshirt-printing-animation video {
+  width: 100%; /* or set a specific width */
+  max-width: 600px; /* adjust as necessary */
+  height: auto; /* maintains aspect ratio */
+}
+
+
+/* global.css */
+::-webkit-scrollbar {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(107, 114, 128, 0.5); /* gray-500 color */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, 0.5); /* gray-200 color */
+}
+
+.card {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.connecting-line {
+  position: absolute;
+  height: 2px;
+  background-color: blue; /* Connecting line color */
+  transition: width 0.3s ease;
+}
